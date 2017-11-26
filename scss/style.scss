@@ -260,16 +260,30 @@ textarea {
 .ba-what-we-do {
 	background-color:  #333333;
 	text-align: center;
+	position: relative;
+}
+
+.ba-dots {
+	position: absolute;
+	top: 46px;
+	right: 0;
+	left: 0;
+	margin: auto;
 }
 
 .ba-what-col {
-	padding: 93px 0 115px;
+	padding: 93px 0 114px;
+}
+
+[class^="ba-icon-"] {
+	background: #333;
+	border-radius: 50%;
+	z-index: 5;
+	position: relative;
 }
 
 .ba-icon-search {
 	fill: #5474fc;
-	background: #333;
-	border-radius: 50%;
 }
 
 .ba-icon-check {
@@ -316,7 +330,7 @@ textarea {
 .ba-spain-second {
 	background: #76455b url(../img/bg-spain2.jpg) no-repeat 50%;
 	background-size: cover;
-	padding: 229px 0 100px;
+	padding: 228px 0 100px;
 }
 
 .ba-spain-cont-right {
@@ -333,7 +347,7 @@ textarea {
 .ba-tourist {
 	background: #333 url(../img/bg-tourist.jpg) no-repeat 50%;
 	background-size: cover;
-	padding: 115px 0 200px;
+	padding: 115px 0 120px;
 	text-align: center;
 
 	&__title {
@@ -355,10 +369,12 @@ textarea {
 		float: right;
 		width: 60%;
 		text-align: left;
+		background-color: #333;
 		padding: 28px 40px 30px 60px;
 
 		p {
 			position: relative;
+			letter-spacing: -0.06em;
 		}
 	}
 }
@@ -375,4 +391,69 @@ textarea {
 	top: -20px;
 	left: 0;
 
+}
+
+.ba-slider {
+	max-width: 20%;
+	margin-left: auto;
+	margin-top: 22px;
+	font-size: 0;
+	text-align: right;
+
+	a {
+		border: 1px solid #fff;
+		display: inline-block;
+		padding: 2px 16px;
+
+		&:hover {
+			opacity: 0.5;
+		}
+
+	}
+
+	a + a {
+		margin-left: 15px;
+	}
+
+}
+
+.ba-footer {
+	background-color: #333;
+	padding: 120px 0 42px;
+	text-align: center;
+	letter-spacing: 0.04em;
+
+	&__logo {
+		font: 700 24px/1 $body-font;
+		letter-spacing: 0.1em;
+		margin: 0 0 6px;
+	}
+
+}
+
+.ba-social {
+	list-style: none;
+	padding: 0;
+	margin: 25px 0 0;
+
+	li {
+		display: inline-block;
+	}
+
+	li + li {
+		margin-left: 17px;
+	}
+
+	a {
+		display: block;
+		color: #FFF;
+
+		&:hover {
+			color: #5474fd;
+		}
+	}
+
+	svg {
+		fill: currentColor;
+	}
 }

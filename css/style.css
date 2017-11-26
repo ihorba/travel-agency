@@ -698,15 +698,27 @@ select {
 
 .ba-what-we-do {
   background-color: #333333;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+
+.ba-dots {
+  position: absolute;
+  top: 46px;
+  right: 0;
+  left: 0;
+  margin: auto; }
 
 .ba-what-col {
-  padding: 93px 0 115px; }
+  padding: 93px 0 114px; }
+
+[class^="ba-icon-"] {
+  background: #333;
+  border-radius: 50%;
+  z-index: 5;
+  position: relative; }
 
 .ba-icon-search {
-  fill: #5474fc;
-  background: #333;
-  border-radius: 50%; }
+  fill: #5474fc; }
 
 .ba-icon-check {
   fill: #de5b5b; }
@@ -743,7 +755,7 @@ select {
 .ba-spain-second {
   background: #76455b url(../img/bg-spain2.jpg) no-repeat 50%;
   background-size: cover;
-  padding: 229px 0 100px; }
+  padding: 228px 0 100px; }
 
 .ba-spain-cont-right {
   float: right;
@@ -757,7 +769,7 @@ select {
 .ba-tourist {
   background: #333 url(../img/bg-tourist.jpg) no-repeat 50%;
   background-size: cover;
-  padding: 115px 0 200px;
+  padding: 115px 0 120px;
   text-align: center; }
   .ba-tourist__title {
     font: 400 36px/1 "Aleo", serif;
@@ -770,9 +782,11 @@ select {
     float: right;
     width: 60%;
     text-align: left;
+    background-color: #333;
     padding: 28px 40px 30px 60px; }
     .ba-tourist__info p {
-      position: relative; }
+      position: relative;
+      letter-spacing: -0.06em; }
 
 .ba-cite {
   margin-bottom: 37px;
@@ -784,5 +798,46 @@ select {
   position: absolute;
   top: -20px;
   left: 0; }
+
+.ba-slider {
+  max-width: 20%;
+  margin-left: auto;
+  margin-top: 22px;
+  font-size: 0;
+  text-align: right; }
+  .ba-slider a {
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 2px 16px; }
+    .ba-slider a:hover {
+      opacity: 0.5; }
+  .ba-slider a + a {
+    margin-left: 15px; }
+
+.ba-footer {
+  background-color: #333;
+  padding: 120px 0 42px;
+  text-align: center;
+  letter-spacing: 0.04em; }
+  .ba-footer__logo {
+    font: 700 24px/1 "Josefin Sans", sans-serif;
+    letter-spacing: 0.1em;
+    margin: 0 0 6px; }
+
+.ba-social {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0 0; }
+  .ba-social li {
+    display: inline-block; }
+  .ba-social li + li {
+    margin-left: 17px; }
+  .ba-social a {
+    display: block;
+    color: #FFF; }
+    .ba-social a:hover {
+      color: #5474fd; }
+  .ba-social svg {
+    fill: currentColor; }
 
 /*# sourceMappingURL=style.css.map */
